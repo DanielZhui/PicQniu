@@ -1,5 +1,6 @@
 import os
 import sys
+import uuid
 from configparser import ConfigParser
 
 from qiniu import Auth
@@ -26,21 +27,24 @@ class QiniuManger(object):
 
     def upload_file_qiniu(self):
         pass
-    
-    @classmethod
-    def validate_file(file_path):
-        res = os.path.exists(file_path)
-        if not res:
-            raise '当前输入的文件'
-        return res
 
-
-if __name__ == "__main__":
-    args = sys.argv
+def validate_args(arg):
     if len(args) < 2:
         raise '请输入有效的图片文件夹地址'
     file_path = args[1]
     res = os.path.exists(file_path)
     if not res:
         raise '当前输入的文件不存在，请确认后在重新输入'
-    print(file_path)
+    return file_path
+
+def get_hash_name(filename):
+    random_str = uuid.uuid4().hex[:8]
+    ext = os.path.splitext(filename)[1]
+    return random_str + ext
+
+if __name__ == "__main__":
+    args = sys.argv
+    file_path = validate_args(args)
+    filename = os.path.basename(file_path)
+    random_name = get_hash_name(filename)
+    print(random_name)
