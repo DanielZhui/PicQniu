@@ -127,3 +127,6 @@ dmypy.json
 # project
 .idea
 .pytest_cache
+
+# qiniu json response
+*.json
