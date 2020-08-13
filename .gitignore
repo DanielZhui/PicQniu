@@ -129,4 +129,4 @@ dmypy.json
 .pytest_cache
 
 # qiniu json response
-*.json
+.qiniu_pythonsdk_hostscache.json
