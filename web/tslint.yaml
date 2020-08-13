@@ -1,0 +1,120 @@
+rules:
+  member-access: true
+  no-empty-interface: true # 不允许空接口
+  no-parameter-reassignment: true # 不允许修改方法输入参数
+  prefer-for-of: true # 如果for循环中没有使用索引，建议是使用for-of
+  prefer-const: true
+  eofline: true
+  object-literal-key-quotes:
+    - true
+    - as-needed
+  member-ordering:
+    - true
+    - order:
+        - public-static-field
+        - public-static-method
+        - protected-static-field
+        - protected-static-method
+        - private-static-field
+        - private-static-method
+        - public-instance-field
+        - protected-instance-field
+        - private-instance-field
+        - public-constructor
+        - protected-constructor
+        - private-constructor
+        - public-instance-method
+        - protected-instance-method
+        - private-instance-method
+  curly: true
+  forin: true
+  no-arg: true
+  no-conditional-assignment: true
+  no-debugger: true
+  no-duplicate-super: true
+  no-empty: true
+  no-eval: true
+  no-invalid-template-strings: true
+  no-sparse-arrays: true
+  no-string-throw: true
+  no-switch-case-fall-through: true
+  no-unsafe-finally: true
+  no-use-before-declare: false
+  no-var-keyword: true
+  no-return-await: true
+  radix: true
+  restrict-plus-operands: true
+  triple-equals: true
+  use-isnan: true
+  indent:
+    - true
+    - spaces
+    - 4
+  linebreak-style:
+    - true
+    - CR/LF
+  max-line-length:
+    - true
+    - 150
+  no-duplicate-imports: true
+  align:
+    - true
+    - parameters
+    - statements
+    - menbers
+    - elements
+  array-type:
+    - true
+    - array
+  class-name: true
+  comment-format:
+    - true
+    - check-space
+  encoding: true
+  import-spacing: true
+  new-parens: true
+  no-consecutive-blank-lines:
+    - true
+    - 2
+  no-trailing-whitespace:
+    - true
+    - ignore-comments
+    - ignore-jsdoc
+  no-unnecessary-initializer: true
+  variable-name:
+    - true
+    - allow-leading-underscore
+    - allow-trailing-underscore
+    - ban-keywords
+  one-line:
+    - true
+    - check-open-brace
+    - check-catch
+    - check-else
+    - check-finally
+    - check-whitespace
+  space-before-function-paren: false
+  quotemark:
+    - true
+    - double
+  whitespace:
+    - true
+    - check-branch
+    - check-decl
+    - check-operator
+    - check-module
+    - check-preblock
+    - check-separator
+    - check-rest-spread
+    - check-type
+    - check-typecast
+    - check-type-operator
+  semicolon:
+    - true
+    - always
+    - ignore-bound-class-methods
+  ordered-imports:
+    - true
+    - import-sources-order: lowercase-first
+      name-imports-order: lowercase-first
+      group-imports: true
