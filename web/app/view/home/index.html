@@ -12,12 +12,47 @@
         body {
             background-image: url("https://imgchr.com/content/images/system/home_cover_1587121321656_fce672.jpg");
         }
+
+        .container{
+            display:table;
+            height:100%;
+        }
+
+        .row{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        /* centered columns styles */
+        .row-centered {
+            text-align:center;
+        }
+        .col-centered {
+            display:inline-block;
+            float:none;
+            text-align:left;
+            margin-right:-4px;
+        }
     </style>
 </head>
 <body>
     <h2 style="text-align: center; color: white;">Welcome to PicQniu</h2>
     <div class="container">
-        <p style="color: yellow;">test</p>
+        <div class="row row-centered">
+            <div class="col-md-6 col-centered">
+                <h2 style="text-align: center; color: white;">免费图片上传</h2>
+                <b style="text-align: center; color: white;">
+                PicQniu 图床-高速稳定的图片上传和外链服务
+                全球CDN加速, 最大单张支持 10 MB, 支持批量上传
+                本站启用自动检测技术, 禁止上传色情/反动/博彩/黑产等违法图片
+                一经发现, 立即删除该用户下所有图片(包括正常图片), 并永久封账号和IP!
+                </b>
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    <button type="submit" class="btn btn-success btn-lg">开始上传</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
