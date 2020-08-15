@@ -7,6 +7,13 @@ export default (appInfo: EggAppInfo) => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1597330960746_5307';
 
+  config.view = {
+    defaultViewEngine: 'nunjucks',
+    mapping: {
+      '.html': 'nunjucks',
+    },
+  };
+
   // add your egg config in here
   config.middleware = [];
 
